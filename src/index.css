@@ -1,0 +1,21 @@
+.backdrop {
+  z-index: 9999 !important;
+}
+
+.health-insurance-page {
+  padding-top: 22px;
+}
+
+.health-insurance-form-input {
+  width: 100%;
+}
+
+.MuiFormControl-marginNormal {
+  margin: 0 !important;
+}
+
+.health-insurance-form-button {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}

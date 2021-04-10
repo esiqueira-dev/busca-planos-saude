@@ -7,13 +7,13 @@ function CustomAutoComplete(props) {
     <Autocomplete
         { ...props }
         options={options}
+        className="m-0"
         getOptionLabel={getOptionLabel}
         value={value}
         onChange={(_event, newInputValue) => {
           updateState(newInputValue || {});
         }}
-        style={{ width: 300 }}
-        renderInput={(params) => <TextField {...params} label={name} margin="normal" />}
+        renderInput={(params) => <TextField {...params} label={name} margin="normal" variant="outlined" />}
       />
   )
 }
