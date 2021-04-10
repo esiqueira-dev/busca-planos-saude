@@ -19,3 +19,11 @@
   height: 100%;
   border-radius: 5px;
 }
+
+.MuiCardMedia-img {
+  object-fit: none;
+}
+
+#divider {
+  margin: 18px;
+}
