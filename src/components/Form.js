@@ -87,12 +87,18 @@ function Form({ setHealthInsurancePlans }) {
         .then((response) => response.json())
         .then((data) => {
           setLoading(false);
-          setHealthInsurancePlans(data.planos);
-          console.log(data.planos)
+          if (data.planos.length) {
+            setHealthInsurancePlans(data.planos);
+          } else {
+            setHealthInsurancePlans([]);
+            setLoading(false);
+            setAlertMessage("Não retornaram planos para esta pesquisa");
+          }
         })
         .catch((error) => {
           setLoading(false);
-          console.log(error);
+          setAlertMessage("Não retornaram planos para esta pesquisa");
+          setOpenAlert(true);
         });
     } else {
       setAlertMessage("Favor preencher completamente o formulário");
