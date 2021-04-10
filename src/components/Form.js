@@ -29,7 +29,7 @@ function Form({ setHealthInsurancePlans }) {
   const [alertMessage, setAlertMessage] = useState("");
 
   const externalApiBaseUrl =
-    "http://lb-aws-1105894158.sa-east-1.elb.amazonaws.com";
+    "https://lb-aws-1105894158.sa-east-1.elb.amazonaws.com";
 
   const isObjectEmpty = (obj) => {
     return !Object.keys(obj).length;
